@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: BodegaSerif;
+}
+
+.logo{
+    max-width: 80%;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;   
+    align-content: center;
+}
+
+.container{
+    
+    padding: 40px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.btn{
+    padding: 20px;
+    background: #DEA0B7;
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    width: 200px;
+    align-self: center;
+}
+
+main, .mainImg{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery{
+    height: 100%;
+}
+
+.gallery img{
+   
+    height: 100%;
+}
+
+.mainImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainImg img, img{
+    max-width: 100%;
+}
+
+.mainImg img{
+    margin-top: 30px;
+    opacity: 0.95;
+}
+
+.modal-out {
+    display: block; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    }
+
+.modal-in {
+
+    margin: 30px auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
