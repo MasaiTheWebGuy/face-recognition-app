@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>Trust Ur Tastebudz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/Images/Logo.svg" alt="Logo" class="ttb">
+        </div>
+    
+        <ul>
+            <li class="active">Menu</li>
+            <li><a href="\Contact\index.html">Contact</a></li>
+        </ul>
+        <div class="order">
+            <div>
+            <img src="/Images/food-donation.svg" alt="" onclick="showMenu()" >
+            </div>    
+            <div class="nav">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+    <main>
+    
+        <section class="mid">
+           <p>Welcome to Trust Ur Tastebudz</p>
+           <p>Place your order online to have your food delivered on Weds & Sats</p>
+           <p>We will meet at a central location in Charlotte</p>
+        </section>
+        <section class="btm">
+            <h3>Today's Menu</h3>
+              
+            <div class="main-menu">
+                <img src="/Images/TYTBsvg.svg" alt="" class="form-logo">
+                <h1>Entrees</h1>
+              <div class="menu">
+                <div class="food-items">
+                    <div class="food">
+                        <div id="pic">
+                            <img src="/Images/FullSizeR1.jpg" alt="" class="food-pic">
+                        </div>
+                        <div class="food-descript">
+                            <span class="food-name row">OG Chik'n Sandwich w/ Fries</span><br>
+                            <span class="food-desc row">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, recusandae!</span><br>
+                            <span class="food-price row">$12</span>
+                        </div>
+                        <!--Modal to display food when clicked-->
+                        <div id="foodModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="menu">
+                                <div class="modal-pic">
+                                    <img src="/Images/FullSizeR1.jpg" alt="" class="food-pic">
+                                </div>
+                                <div class="modal-food">
+                                    <h3 class="food-name">OG Chik'n Sandwich w/ Fries</h3>
+                                    <span class="food-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, recusandae!</span>
+                                    <span class="cart-price">$12</span>
+                                </div>
+                                <form action="">
+                                    <input type="checkbox" class="condo" name="condo1" value="No Lettuce">
+                                    <label for="condo1"> No Lettuce</label><br>
+                                    <input type="checkbox" class="condo" name="condo2" value="No Tomato">
+                                    <label for="condo2"> No Tomato</label><br>
+                                    <input type="checkbox" class="condo" name="condo3" value="No Cheeze">
+                                    <label for="condo3"> No Cheeze</label><br>
+                                    <input type="checkbox" class="condo" name="condo4" value="No Sauce">
+                                    <label for="condo4"> No Sauce</label><br><br>
+                                    
+                                </form>
+                                <div class="total">
+                                    <h3>Quantity:</h3>
+                                    <div class="counter">
+                                        <input type="number" value="1" class="cart-quantity-input">
+                                    </div>
+                                    <button class="btn-purchase">ADD TO CART</button>
+                                </div>
+                            </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div id="pic">
+                            <img src="/Images/FullSizeR1.jpg" alt="" class="food-pic">
+                        </div>
+                        <div class="food-descript">
+                            <span class="food-name row">"Its Gettin Hot in Here" Chik'n Sandwich w/ Fries</span><br>
+                            <span class="food-desc row">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, recusandae!</span><br>
+                            <span class="food-price row">$12</span>
+                        </div>
+                        <!--Modal to display food when clicked-->
+                        <div id="foodModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="menu">
+                                <div class="modal-pic">
+                                    <img src="/Images/FullSizeR1.jpg" alt="" class="food-pic">
+                                </div>
+                                <div class="modal-food">
+                                    <h3 class="food-name">"Its Gettin' Hot in Here" Chik'n Sandwich w/ Fries</h3>
+                                    <span class="cart-price">$12</span>
+                                </div>
+                                <form action="">
+                                    <input type="checkbox" class="condo" name="condo1" value="No Lettuce">
+                                    <label for="condo1"> No Lettuce</label><br>
+                                    <input type="checkbox" class="condo" name="condo2" value="No Tomato">
+                                    <label for="condo2"> No Tomato</label><br>
+                                    <input type="checkbox" class="condo" name="condo3" value="No Cheeze">
+                                    <label for="condo3"> No Cheeze</label><br>
+                                    <input type="checkbox" class="condo" name="condo4" value="No Sauce">
+                                    <label for="condo4"> No Sauce</label><br><br>
+                                    
+                                </form>
+                                <div class="total">
+                                    <h3>Quantity:</h3>
+                                    <div class="counter">
+                                        <input type="number" value="1" class="cart-quantity-input">
+                                    </div>
+                                    <button class="btn-purchase">ADD TO CART</button>
+                                </div>
+                            </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div id="pic">
+                            <img src="/Images/IMG_12801.jpg" alt="" class="food-pic">
+                        </div>
+                        <div class="food-descript">
+                            <span class="food-name row">General Tso</span><br>
+                            <span class="food-desc row">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, recusandae!</span><br>
+                            <span class="food-price row">$15</span>
+                        </div>
+                        <!--Modal to display food when clicked-->
+                        <div id="foodModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                            <div class="menu">
+                                <div class="modal-pic">
+                                    <img src="/Images/IMG_12801.jpg" alt="" class="food-pic">
+                                </div>
+                                <div class="modal-food">
+                                    <h3 class="food-name">General Tso w/ Fried Rice</h3>
+                                    <span class="cart-price">$18</span>
+                                </div>
+                                <div class="total">
+                                    <h3>Quantity:</h3>
+                                    <div class="counter">
+                                        <input type="number" value="1" class="cart-quantity-input">
+                                    </div>
+                                    <button class="btn-purchase">ADD TO CART</button>
+                                </div>
+                            </div>
+                            </div>
+                        
+                        </div>
+                    </div>      
+                    <div class="food">
+                        <div id="pic">
+                            <img src="/Images/IMG_12801.jpg" alt="" class="food-pic">
+                        </div>
+                        <div class="food-descript">
+                            <span class="food-name">Orange Chik'n w/ Fried Rice</span>
+                            <span class="food-price">$15</span>
+                        </div>
+                        <!--Modal to display food when clicked-->
+                        <div id="foodModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                            <div class="menu">
+                                <div class="modal-pic">
+                                    <img src="/Images/IMG_12801.jpg" alt="" class="food-pic">
+                                </div>
+                                <div class="modal-food">
+                                    <h3 class="food-name">Orange Chik'n w/ Fried Rice</h3>
+                                    <span class="cart-price">$18</span>
+                                </div>
+                                <div class="total">
+                                    <h3>Quantity:</h3>
+                                    <div class="counter">
+                                        <input type="number" value="1" class="cart-quantity-input">
+                                    </div>
+                                    <button class="btn-purchase">ADD TO CART</button>
+                                </div>
+                            </div>
+                            </div>
+                        
+                        </div>
+                    </div>      
+                    <div class="food">
+                        <div id="pic">
+                            <img src="/Images/IMG_41341.jpg" alt="" class="food-pic">
+                        </div>
+                        <div class="food-descript">
+                            <span class="food-name row">Chik'n Drumsticks</span><br>
+                            <span class="food-desc row">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, recusandae!</span><br>
+                            <span class="food-price row">$12</span>
+                        </div>
+                        <!--Modal to display food when clicked-->
+                        <div id="foodModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="menu">
+                                <div class="modal-pic">
+                                    <img src="/Images/IMG_41341.jpg" alt="" class="food-pic">
+                                </div>
+                                <div class="modal-food">
+                                    <h3 class="food-name">Chik'n Drumsticks(3) w/ Mac and Cheeze</h3>
+                                    <span class="cart-price">$15</span>
+                                </div>
+                                <div class="total">
+                                    <h3>Quantity:</h3>
+                                    <div class="counter">
+                                        <input type="number" value="1" class="cart-quantity-input">
+                                    </div>
+                                    <button class="btn-purchase">ADD TO CART</button>
+                                </div>
+                            </div>
+                            </div>
+                        
+                        </div>
+                    </div>    
+                        <div class="food">
+                            <div id="pic">
+                                <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                            </div>
+                            <div class="food-descript">
+                                <span class="food-name">Cheeze Steak & Fries</span>
+                                <span class="food-price">$15</span>
+                            </div>
+                            <!--Modal to display food when clicked-->
+                            <div id="foodModal" class="modal">
+    
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="menu">
+                                    <div class="modal-pic">
+                                        <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                                    </div>
+                                    <div class="modal-food">
+                                        <h3 class="food-name">Cheeze Steak & Fries</h3>
+                                        <span class="cart-price">$12</span>
+                                    </div>
+                                    <div class="total">
+                                        <h3>Quantity:</h3>
+                                        <div class="counter">
+                                            <input type="number" value="1" class="cart-quantity-input">
+                                        </div>
+                                        <button class="btn-purchase">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>         
+                        <div class="food">
+                            <div id="pic">
+                                <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                            </div>
+                            <div class="food-descript">
+                                <span class="food-name">Chik'n & Waffles</span>
+                                <span class="food-price">$15</span>
+                            </div>
+                            <!--Modal to display food when clicked-->
+                            <div id="foodModal" class="modal">
+    
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="menu">
+                                    <div class="modal-pic">
+                                        <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                                    </div>
+                                    <div class="modal-food">
+                                        <h3 class="food-name">Chik'n & Waffles</h3>
+                                        <span class="cart-price">$12</span>
+                                    </div>
+                                    <div class="total">
+                                        <h3>Quantity:</h3>
+                                        <div class="counter">
+                                            <input type="number" value="1" class="cart-quantity-input">
+                                        </div>
+                                        <button class="btn-purchase">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>       
+                        <div class="food">
+                            <div id="pic">
+                                <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                            </div>
+                            <div class="food-descript">
+                                <span class="food-name">Jackfruit Sandwich</span>
+                                <span class="food-price">$15</span>
+                            </div>
+                            <!--Modal to display food when clicked-->
+                            <div id="foodModal" class="modal">
+    
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="menu">
+                                    <div class="modal-pic">
+                                        <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                                    </div>
+                                    <div class="modal-food">
+                                        <h3 class="food-name">Jackfruit Sandwich</h3>
+                                        <span class="cart-price">$12</span>
+                                    </div>
+                                    <div class="total">
+                                        <h3>Quantity:</h3>
+                                        <div class="counter">
+                                            <input type="number" value="1" class="cart-quantity-input">
+                                        </div>
+                                        <button class="btn-purchase">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>       
+                        <div class="food">
+                            <div id="pic">
+                                <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                            </div>
+                            <div class="food-descript">
+                                <span class="food-name">Mac & Cheeze</span>
+                                <span class="food-price">$5</span>
+                            </div>
+                            <!--Modal to display food when clicked-->
+                            <div id="foodModal" class="modal">
+    
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="menu">
+                                    <div class="modal-pic">
+                                        <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                                    </div>
+                                    <div class="modal-food">
+                                        <h3 class="food-name">Mac & Cheeze</h3>
+                                        <span class="cart-price">$5</span>
+                                    </div>
+                                    <div class="total">
+                                        <h3>Quantity:</h3>
+                                        <div class="counter">
+                                            <input type="number" value="1" class="cart-quantity-input">
+                                        </div>
+                                        <button class="btn-purchase">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>       
+                        <div class="food">
+                            <div id="pic">
+                                <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                            </div>
+                            <div class="food-descript">
+                                <span class="food-name">Stir-Fry String Beans</span>
+                                <span class="food-price">$5</span>
+                            </div>
+                            <!--Modal to display food when clicked-->
+                            <div id="foodModal" class="modal">
+    
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="menu">
+                                    <div class="modal-pic">
+                                        <img src="/Images/IMG_34131.jpg" alt="" class="food-pic">
+                                    </div>
+                                    <div class="modal-food">
+                                        <h3 class="food-name">Stir-Fry String Beans</h3>
+                                        <span class="cart-price">$5</span>
+                                    </div>
+                                    <div class="total">
+                                        <h3>Quantity:</h3>
+                                        <div class="counter">
+                                            <input type="number" value="1" class="cart-quantity-input">
+                                        </div>
+                                        <button class="btn-purchase">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>       
+                        <div class="food">
+                            <div id="pic">
+                                <img src="/Images/IMG_34131.jpg" alt="Banana Pudding" class="food-pic">
+                            </div>
+                            <div class="food-descript">
+                                <span class="food-name">Banana Pudding</span>
+                                <span class="food-price">$10</span>
+                            </div>
+                            <!--Modal to display food when clicked-->
+                            <div id="foodModal" class="modal">
+    
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="menu">
+                                    <div class="modal-pic">
+                                        <img src="/Images/IMG_34131.jpg" alt="Vegan Banana Pudding" class="food-pic">
+                                    </div>
+                                    <div class="modal-food">
+                                        <h3 class="food-name">Banana Pudding</h3>
+                                        <span class="cart-price">$10</span>
+                                    </div>
+                                    <div class="total">
+                                        <h3>Quantity:</h3>
+                                        <div class="counter">
+                                            <input type="number" value="1" class="cart-quantity-input">
+                                        </div>
+                                        <button class="btn-purchase">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>     
+                        
+                    </div>       
+                    
+                </div>
+              </div>
+            </form>   
+        </section>
+    </main>
+    <div class="sidemenu" id="sidemenu">
+        <span class="close" onclick="closeNav()">X</span>
+        <div class="ordered-items"></div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <div class="checkout">
+            <button class="purchase-btn">Checkout</button>
+            <a href="#" onclick="closeNav()">KEEP SHOPPING</a>
+        </div>
+    </div>
+    <div class="to-top">
+        <a href=""><img src="/Images/PinClipart.com_i-love-math-clipart_848449.png" alt="" max-width="100%"></a>
+    </div>
+    
+    <div class="foot">
+        <a href="https://www.instagram.com/trusturtastebudz/"><img src="/Images/iconfinder_1_Facebook_colored_svg_copy_5296499.png" alt=""></a>
+        <a href="https://www.facebook.com/Trust-Ur-Tastebudz-303299250356275"><img src="/Images/iconfinder_1_Instagram_colored_svg_1_5296765.png" alt=""></a>
+    </div>
+
+    <script>
+    const toTop = document.querySelector(".to-top")
+    
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100){
+            toTop.classList.add('active')
+        } else {
+            toTop.classList.remove('active')
+        }
+    })
+
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("gal-pic");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+
+    </script>
+</body>
+</html>

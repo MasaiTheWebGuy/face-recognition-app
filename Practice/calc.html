@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="pracscript.js"></script>
+</head>
+<body>
+    <form>
+        value 1 <input type="text" id="value1">
+        value 2 <input type="text" id="value2">
+        Operator: 
+        <select name="" id="operator">
+            <option value="add">Add</option>
+            <option value="min">Subtract</option>
+            <option value="div">Divide</option>
+            <option value="mul">Multipy</option>
+        </select>
+        <button type="button" onclick="calc()">Calculate</button>
+    </form>
+    <p class="display"></p>
+</body>
+
+<script>
+    function calc(){
+        let a = parseInt(document.querySelector('#value1').value);
+        let b = parseInt(document.querySelector('#value2').value);
+        let op = document.querySelector('#operator').value;
+        let display = document.querySelector('.display');
+        let calculate;
+
+        if(op == "add"){
+            calculate = a + b;
+        } else if(op == "min") {
+            calculate = a - b;
+        } else if(op == "div") {
+            calculate = a / b;
+        } else if(op == "mul") {
+            calculate = a * b;
+        }
+
+        display.textContent = calculate;
+    };
+
+
+</script>
+</html>
